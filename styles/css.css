@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+}
+
+body, td, select {
+    font-family: arial;
+    font-size: 12px;
+}
+
+.rbody {
+    background-color: #ffffff;
+}
+
+.dline {
+    background: #444444;
+    position: absolute;
+    font-size: 0;
+    line-height: 0;
+}
+
+.dbox {
+    border-radius: 8px;
+    border: solid black;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    position: absolute;
+    width: 100px;
+    height: 50px;
+    border-width: 1px;
+}
+
+.dcella {
+    text-align: center;
+    color: #000000;
+    font-size:15px;
+    overflow: hidden;
+}
+
+.dcelld {
+    text-align: center;
+    color: #777777;
+    font-size:15px;
+    overflow: hidden;
+}
+
+.di {
+    position: absolute;
+    cursor: pointer;
+    overflow: hidden;
+    width: 100px;
+    height: 50px;
+}
+
+.marginon {
+    left: 0;
+    top: 0;
+    height: 100%;
+    margin-left: 320px;
+    margin-right: 0;
+}
+
+.man {
+    background: rgb(214, 221, 255);
+}
+
+.woman {
+    background: rgb(255, 214, 238);
+}
