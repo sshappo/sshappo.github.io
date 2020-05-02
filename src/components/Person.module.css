@@ -1,0 +1,42 @@
+.personBox {
+    border: 1px solid black;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: inline-block;
+
+    max-width: 130px;
+    min-width: 20px;
+    min-height: 10px;
+    max-height: 120px;
+    font-family: "Comic Sans MS";
+    font-size: 8px;
+
+    padding: 2px 4px;
+
+    /* no select */
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently */
+
+    transition: font-size 200ms;
+
+    margin: 15px;
+}
+.hidded {
+    display: none;
+}
+.personBox:hover {
+    font-size: 15px;
+    transition: font-size 200ms;
+}
+.personBox:hover .hidded {
+    display: block;
+}
+.personLine {
+    margin-top: auto;
+    margin-bottom: auto;
+    text-align: center;
+}
