@@ -30,7 +30,7 @@ class PersonConfig {
 const App = () => {
     return (
         <>
-            <div style={{padding: '100px'}}>
+            <div>
                 {conf.map((person, index) => <Person key={index} {...person}/>)}
             </div>
         </>
