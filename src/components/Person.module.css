@@ -13,9 +13,9 @@
 
     padding: 2px 4px;
 
-    transition: font-size 200ms;
+    transition: transform .2s;
 
-    margin: 15px;
+    float: left;
 }
 
 .disableSelection {
@@ -34,6 +34,7 @@
 .personBox:hover {
     transform: scale(1.5);
     transition: transform 200ms;
+    background-color: white;
 }
 .personBox:hover .hidded {
     display: block;
