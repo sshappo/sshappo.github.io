@@ -32,8 +32,8 @@
     display: none;
 }
 .personBox:hover {
-    font-size: 15px;
-    transition: font-size 200ms;
+    transform: scale(1.5);
+    transition: transform 200ms;
 }
 .personBox:hover .hidded {
     display: block;
