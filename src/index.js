@@ -13,6 +13,23 @@ const conf = [
     },
     {
         sex: 'male',
+        firstName: 'Сидор',
+        middleName: 'Сидорович',
+        lastName: 'Сидоров',
+        dateOfBirth: '10 jan 1926',
+        dateOfDeath: '5 may 1986'
+    },
+    {
+        sex: 'female',
+        firstName: 'Татьяна',
+        middleName: 'Петровна',
+        lastName: 'Иванова',
+        maidenName: 'Петрова',
+        dateOfBirth: '10 jan 1926',
+        dateOfDeath: '5 may 1986'
+    },
+    {
+        sex: 'male',
         firstName: 'Петр',
         middleName: 'Петрович',
         lastName: 'Петров',
