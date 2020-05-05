@@ -28,6 +28,10 @@ module.exports = {
     module: {
         rules: [
             {
+                test: /\.ged$/i,
+                use: 'raw-loader',
+            },
+            {
                 test: /\.js$/,
                 exclude: /node_modules/,
                 use: {

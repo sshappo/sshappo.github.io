@@ -1,6 +1,8 @@
 import ReactDOM from 'react-dom';
 import React from 'react';
 import Person from "./components/Person";
+import gedcom from './assets/111.ged';
+import { GedcomParseService } from "./services/gedcom-parse.service";
 
 const conf = [
     {
@@ -45,11 +47,53 @@ class PersonConfig {
 }
 
 const App = () => {
+    const gedcomService = new GedcomParseService(gedcom);
+    console.log(gedcomService.results);
+
     return (
         <>
+{/*
             <div>
                 {conf.map((person, index) => <Person key={index} {...person}/>)}
             </div>
+*/}
+            <table>
+                <tbody>
+                    <tr>
+                        <td>
+                            <Person {...conf[0]}></Person>
+                        </td>
+                        <td>
+                            <Person {...conf[1]}></Person>
+                        </td>
+                        <td>
+                            <Person {...conf[2]}></Person>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <Person {...conf[2]}></Person>
+                        </td>
+                        <td>
+                            <Person {...conf[1]}></Person>
+                        </td>
+                        <td>
+                            <Person {...conf[0]}></Person>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <Person {...conf[0]}></Person>
+                        </td>
+                        <td>
+                            <Person {...conf[1]}></Person>
+                        </td>
+                        <td>
+                            <Person {...conf[2]}></Person>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
         </>
     );
 };
