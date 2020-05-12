@@ -1,3 +1,5 @@
+import gedcom from '../assets/111.ged';
+
 export class GedcomParseService {
 
 
@@ -113,3 +115,7 @@ function removeAllExeptLetters(str) {
 function handleKey(str) {
     return str.replace(/@/g, '').replace(/\r/g, '').trim();
 }
+
+export const gedcomService = new GedcomParseService(gedcom);
+
+console.log(gedcomService.results);
