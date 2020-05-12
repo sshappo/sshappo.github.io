@@ -5,7 +5,6 @@ import position from './App.module.css';
 import { gedcomService } from "../services/gedcom-parse.service";
 import { PersonConfig } from "../utils/PersonConfig";
 
-
 const Person = ({id, top, left}) => {
     const {
         firstName,
@@ -20,7 +19,7 @@ const Person = ({id, top, left}) => {
             <div className={styles.personLine}>{firstName}</div>
             <div className={`${styles.personLine} ${styles.hidded}`}>{middleName}</div>
             <div className={styles.personLine}>{lastName}</div>
-            {maidenName && <div className={`${styles.personLine} ${styles.hidded}`}>({maidenName})</div>}
+            {maidenName && maidenName !== lastName && <div className={`${styles.personLine} ${styles.hidded}`}>({maidenName})</div>}
             <div className={`${styles.personLine} ${styles.hidded}`}>{dateOfBirth}</div>
             <div className={`${styles.personLine} ${styles.hidded}`}>{dateOfDeath}</div>
         </div>

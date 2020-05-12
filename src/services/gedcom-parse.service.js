@@ -58,6 +58,10 @@ export class GedcomParseService {
                         currentSecondLevel = 'BIRT';
                         this.result[currentKey][currentSecondLevel] = {};
                     }
+                    if (dataLineArr[1].startsWith('DEAT')) {
+                        currentSecondLevel = 'DEAT';
+                        this.result[currentKey][currentSecondLevel] = {};
+                    }
 
                     if (dataLineArr[1] === 'HUSB') {
                         const currentData = line.slice(line.indexOf('HUSB') + 4);
