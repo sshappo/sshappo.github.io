@@ -19,6 +19,5 @@ export class PersonConfig {
 
         this.familyAsChild = data?.FAMC;
         this.familyAsSpouse  = data?.FAMS;
-        console.log(this, data);
     }
 }
