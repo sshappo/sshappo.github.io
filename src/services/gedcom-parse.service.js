@@ -104,7 +104,7 @@ export class GedcomParseService {
                     }
                     break;
             }
-            if (previoslevel > currentlevel) {
+            if ((previoslevel > currentlevel) && currentSecondLevel !== 'DEAT') {
                 currentSecondLevel = '';
             }
         });
