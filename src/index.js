@@ -12,6 +12,11 @@ const App = () => {
             <Person id="I224" top={1} left={5} />
             <Person id="I225" top={1} left={6} />
             <Person id="I43" top={1} left={7} />
+
+            <Person id="I12" top={1} left={9} />
+            <Person id="I183" top={1} left={10} />
+            <Person id="I202" top={1} left={11} />
+            <Person id="I211" top={1} left={12} />
         </>
     );
 };
