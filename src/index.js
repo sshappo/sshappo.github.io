@@ -66,6 +66,12 @@ const App = () => {
             <Person id="I6" top={3} left={19}/>
             <Person id="I16" top={3} left={23}/>
             <Person id="I17" top={3} left={27}/>
+
+
+            <Person id="I13" top={4} left={17}/>
+            <Person id="I5" top={4} left={19}/>
+
+            <Person id="I180" top={5} left={19}/>
         </>
     );
 };
