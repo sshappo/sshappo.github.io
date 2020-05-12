@@ -16,7 +16,25 @@ const App = () => {
             <Person id="I12" top={1} left={9} />
             <Person id="I183" top={1} left={10} />
             <Person id="I202" top={1} left={11} />
-            <Person id="I211" top={1} left={12} />
+
+            <Person id="I208" top={1} left={13} />
+            <Person id="I44" top={1} left={14} />
+
+            <Person id="I15" top={1} left={16} />
+            <Person id="I58" top={1} left={17} />
+
+            <Person id="I132" top={1} left={19} />
+            <Person id="I67" top={1} left={20} />
+            <Person id="I66" top={1} left={22} />
+            <Person id="I103" top={1} left={23} />
+            <Person id="I104" top={1} left={24} />
+
+            <Person id="I110" top={1} left={26} />
+            <Person id="I53" top={1} left={27} />
+
+            <Person id="I14" top={1} left={29} />
+            <Person id="I56" top={1} left={30} />
+            <Person id="I57" top={1} left={31} />
         </>
     );
 };
