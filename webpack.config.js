@@ -11,7 +11,13 @@ const getPlugins = () => {
         new HtmlWebpackPlugin({
             template: `${PATHS.src}/index.html`,
             filename: 'index.html',
-            inject: true
+            inject: true,
+            hash: true,
+            chunks: ['tree'],
+            meta: {
+                charset: 'UTF-8',
+                viewport: 'width=device-width, initial-scale=1, shrink-to-fit=no'
+            }
         }),
     ];
 
@@ -20,7 +26,9 @@ const getPlugins = () => {
 
 module.exports = {
     mode: 'development',
-    entry: './src/index.js',
+    entry: {
+        tree: './src/index.js'
+    },
     output: {
         path: PATHS.dist,
         filename: '[name].[hash].js',
